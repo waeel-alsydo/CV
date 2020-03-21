@@ -1,20 +1,18 @@
-/* Rules for sizing the icon. */
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
 
 /* Rules for using icons as black on a light background. */
 .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
 .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
 
 /* Rules for using icons as white on a dark background. */
+.material-icons.black-border {background-color: #000; padding: 1px; border-radius: 50%;}
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
+
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 /* ------ body ------- */
 * {
     margin: 0;
@@ -22,24 +20,26 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Heebo', sans-serif;
-    background-color: darkgray;
+    font-family: 'Inter', sans-serif;
 }
 .container {
     display: flex;
-    background-color: #fff;
 }
 /* ------ first section ------- */
 .items-1 {
-    width: 34%;
+    width: 35%;
+    height: 100vh;
     background-color: rgb(53, 50, 50);
     color: #fff;
     padding: 20px 20px;
 }
+.items-1 h4 {
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+}
 .center {
     padding: 10px;
     text-align: center;
-    box-shadow: 0px 0px 9px 0px #fff;
 }
 .center img {
     height: 25%;
@@ -52,13 +52,11 @@ body {
 .lang {
     padding: 10px;
     margin-top: 20px;
-    box-shadow: 0px 0px 9px 0px #fff;
 }
 .flot {
     float: left;
 }
 .contact p,
-.person p,
 .lang p {
     padding: 5px 0px 7px 33px;
     font-size: 13px;
@@ -66,6 +64,56 @@ body {
 .lang p {
     padding-left: 0;
 }
+
+/* ------ second section ------- */
+.items-2 {
+    width: 65%;
+}
+.person {
+    height: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.person h1 {
+    font-size: 50px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    border-bottom: 1px solid #000;
+    padding: 5px 0;
+}
+.title h4 {
+    padding-left: 10px;
+}
+
+/* ------ Education and Work ------- */
+.education,
+.work {
+    display:flex;
+    margin: 10px 30px;
+}
+.date {
+    width: 30%;
+}
+.info {
+    width: 70%;
+}
+ul {
+    margin: 10px;
+    list-style: none;
+}
+.info h4 {
+    margin-bottom: 10px;
+}
+
+
+
+
 /* ------ skills ------- */ 
 .skills p {
     margin-top: 10px;
@@ -98,40 +146,3 @@ body {
     background-color: #fff;
     height: 10px;
 }
-/* ------ second section ------- */
-.title {
-    background-color: rgb(53, 50, 50);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3px;
-}
-.items-2 {
-    font-family: 'Times New Roman', Times, serif;
-    width: 70%;
-    padding: 0 10px;
-}
-.items-2,
-ul {
-    padding-bottom: 10px;
-}
-/* ------ Education and Work ------- */
-.education,
-.work {
-    display:flex;
-}
-.date {
-    width: 30%;
-    padding-right: 20px;
-}
-.info {
-    width: 60%;
-}
-.info
-h4,
-h5 {
-    color: #000;
-}
-
-
