@@ -41,8 +41,7 @@ body {
     text-align: center;
 }
 .center img {
-    height: 25%;
-    width: 170px;
+    width: 100%;
     border-radius: 50%;
 }
 .contact,
@@ -68,11 +67,10 @@ body {
     width: 75%;
 }
 .person {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 20px;
+    width: 90%;
+    text-align: center;
+    margin: 10px auto;
+    padding: 30px;
 }
 .person h1 {
     font-size: 50px;
@@ -80,7 +78,7 @@ body {
 .title {
     display: flex;
     align-items: center;
-    margin: 5px 15px;
+    margin: 10px 15px;
     border-bottom: 1px solid #000;
     padding: 5px 0;
 }
@@ -106,6 +104,9 @@ body {
 ul {
     margin: 10px;
     list-style: none;
+}
+ul li {
+    line-height: 23px;
 }
 .info h4 {
     margin-bottom: 10px;
