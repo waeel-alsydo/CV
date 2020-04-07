@@ -44,7 +44,17 @@ body {
     width: 100%;
     border-radius: 50%;
 }
-.contact,
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.contact p {
+    padding-left: 10px;
+}
+.contact .icon {
+    padding-top: 10px;
+}
 .skills,
 .lang {
     padding: 10px;
@@ -53,10 +63,12 @@ body {
 .flot {
     float: left;
 }
-.contact p{
-    padding: 5px 0px 7px 30px;
+.icon p{
+    display: flex;
+    align-items: center;
     font-size: 13px;
 }
+
 .lang p {
     padding: 5px 0px 7px 0px;
     font-size: 13px;
@@ -143,4 +155,24 @@ ul li {
     width: 50%;
     background-color: #fff;
     height: 10px;
+}
+.datum {
+    margin-top: 20px;
+    padding-left: 35px;
+}
+.datum img {
+    width: 200px;
+    height: 60px;
+}
+.lang-vh {
+    margin-top: 60vh;
+}
+.link {
+    margin-top: 20px;
+}
+.link a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
 }
