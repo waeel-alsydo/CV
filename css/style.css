@@ -118,7 +118,7 @@ ul {
     list-style: none;
 }
 ul li {
-    line-height: 23px;
+    line-height: 22px;
 }
 .info h4 {
     margin-bottom: 10px;
@@ -159,10 +159,6 @@ ul li {
 .datum {
     margin-top: 20px;
     padding-left: 35px;
-}
-.datum img {
-    width: 200px;
-    height: 60px;
 }
 .lang-vh {
     margin-top: 60vh;
